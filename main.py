@@ -50,10 +50,10 @@ if __name__ == "__main__":
         chrome_options: ChromeOptions = ChromeOptions()
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
-        
-        
+
+
         driver: Chrome = Chrome(options=chrome_options)
-        
+
         run_partial: partial = partial(save_cookies_task, driver)
         scp: Process = Process(target=run_partial)
         # handle_downloads_partial: partial = partial()
