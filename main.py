@@ -88,8 +88,6 @@ if __name__ == "__main__":
 
         save_cookies(driver)
 
-        # print("Deleting download cache...")
-        # rmtree(f"downloads{path.sep}")
 
         driver.close()
     else:
