@@ -8,8 +8,6 @@ from functools import partial
 from time import sleep
 from getkey import getkey
 from replit import db
-from os import path, mkdir
-from shutil import rmtree
 
 
 # Cookies
