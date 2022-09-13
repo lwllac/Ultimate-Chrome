@@ -62,7 +62,7 @@ if __name__ == "__main__":
         if db.keys():
             print("Loading cookies...", end="")
             for key in sorted([key for key in db.keys() if key.isnumeric()],
-                              key=lambda key: int(key)):
+                              key=int):
                 cookie: dict = loads(db[key])
                 url: str = assemble_url(cookie)
                 if urlparse(
